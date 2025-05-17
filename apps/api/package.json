@@ -1,0 +1,25 @@
+{
+  "name": "@appanimals/api",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch run index.ts"
+  },
+  "dependencies": {
+    "@appanimals/core": "workspace:*",
+    "@hono/zod-validator": "^0.4.3",
+    "@scalar/hono-api-reference": "^0.8.1",
+    "@stripe/stripe-react-native": "^0.46.0",
+    "@types/express": "^5.0.1",
+    "express": "^5.1.0",
+    "hono": "^4.7.6",
+    "hono-openapi": "^0.4.6",
+    "react-hook-form": "^7.56.4",
+    "zod": "^3.24.2",
+    "zod-openapi": "^4.2.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

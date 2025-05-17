@@ -1,0 +1,23 @@
+{
+  "name": "appanimals",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch run ./apps/api/index.ts"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^1.2.14",
+    "@stripe/stripe-js": "^7.3.0",
+    "stripe": "^18.1.0"
+  }
+}
